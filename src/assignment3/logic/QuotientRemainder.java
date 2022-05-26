@@ -31,9 +31,8 @@ public class QuotientRemainder {
     public void isNumeric(String[] args) throws IsNumeric{
 
         try {
-            for (String arg : args) {
-                Integer.parseInt(arg);
-            }
+                Integer.parseInt(args[0]);
+            Integer.parseInt(args[1]);
         } catch (Exception ignored) {
             throw new IsNumeric("please enter num only");
         }
